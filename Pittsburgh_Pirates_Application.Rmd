@@ -71,16 +71,28 @@ library(dplyr)
 library(ggplot2)
 library(readr)
 library(ggrepel)
+library(baseballr)
 ```
 
 Load in the Oneil Cruz (id: 458015) data:
 ```{r}
-cruz_data <- read.csv("oneil_cruz_2022.csv")
+cruz_data <- read.csv("https://raw.githubusercontent.com/ljennings12/PittPiratesApp/main/oneil_cruz_2022.csv")
 ```
 
 Load in all 2022 Statcast data:
+*Should be loaded in from statcast_2022_scrape*
 ```{r}
-statcast_2022 <- read.csv("statcast_2022.csv")
+statcast_2022_1 <- read.csv("https://raw.githubusercontent.com/ljennings12/PittsburghPiratesApp/main/statcast_2022_1.csv")
+
+statcast_2022_2 <- read.csv("https://raw.githubusercontent.com/ljennings12/PittsburghPiratesApp/main/statcast_2022_2.csv")
+
+statcast_2022_3 <- read.csv("https://raw.githubusercontent.com/ljennings12/PittsburghPiratesApp/main/statcast_2022_3.csv")
+
+statcast_2022_4 <- read.csv("https://raw.githubusercontent.com/ljennings12/PittsburghPiratesApp/main/statcast_2022_4.csv")
+
+statcast_2022_5 <- read.csv("https://raw.githubusercontent.com/ljennings12/PittsburghPiratesApp/main/statcast_2022_5.csv")
+
+statcast_2022 <- rbind(statcast_2022_1, statcast_2022_2, statcast_2022_3, statcast_2022_4, statcast_2022_5)
 ```
 
 Create a variable for the count and strikeout counter
