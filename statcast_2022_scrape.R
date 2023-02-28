@@ -1,13 +1,9 @@
 # Scraping Statcast Data
 
 library(tidyverse)
-
-# Access baseballr package:
-install.packages('devtools')
-devtools::install_github('BillPetti/baseballr')
 library(baseballr)
 
-# Credit to Jim Albert 
+# Credit to Jim Albert
 # Break 2022 season up into chunks to ensure we can grab 
 # data without running into any connectivity issues
 
