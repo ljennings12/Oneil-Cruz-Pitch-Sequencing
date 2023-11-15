@@ -1,4 +1,4 @@
-# Pittsburgh Pirates Application
+# Oneil Cruz Pitch Sequencing
 
 This repository contains all materials for my Oneil Cruz Pitch Sequencing research. 
 
